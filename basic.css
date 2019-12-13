@@ -1,10 +1,13 @@
 body {
   background: thistle;
   color: midnightblue;
+  font-size: 18px;
   padding: 1em;
 }
 
-form {
+section {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 50em;
   width: 90vw;
 }
@@ -13,14 +16,23 @@ fieldset {
   border-color: midnightblue;
   margin-bottom: 1em;
   padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 legend {
+  color: tomato;
   font-weight: bolder;
   font-family: 'Comic Sans MS';
-  font-size: 1.5em;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  text-shadow: -1px -1px 1px peachpuff, 2px 2px 2px maroon;
+}
+
+input[type="text"] {
+  font-family: serif;
+  font-size: 1em;
+  padding: 0.7em;
 }
 
 ul {
@@ -30,11 +42,19 @@ ul {
 
 .list--grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-gap: 0.5em;
 }
 
 li {
   padding-bottom: 0.5em;
+}
+
+.label--long {
+  /* this seems like a dumb thing */
+  display: block;
+  margin-left: 25px;
+  margin-top: -18px;
 }
 
 input:disabled + label {
