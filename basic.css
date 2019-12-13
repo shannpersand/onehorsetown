@@ -1,8 +1,16 @@
 body {
-  background: thistle;
-  color: midnightblue;
+  background: floralwhite;
+  color: black;
+  font-family: benton-modern-display, serif;
+  font-weight: 400;
   font-size: 18px;
   padding: 1em;
+}
+
+h1 {
+  border-bottom: 1px solid hotpink;
+  font-family: p22-zaner-pro-four, sans-serif;
+  font-weight: 800;
 }
 
 section {
@@ -13,7 +21,7 @@ section {
 }
 
 fieldset {
-  border-color: midnightblue;
+  border-color: black;
   margin-bottom: 1em;
   padding-bottom: 1em;
   padding-left: 2em;
@@ -21,12 +29,11 @@ fieldset {
 }
 
 legend {
-  color: tomato;
-  font-weight: bolder;
-  font-family: 'Comic Sans MS';
-  font-size: 2.5em;
-  letter-spacing: 2px;
-  text-shadow: -1px -1px 1px peachpuff, 2px 2px 2px maroon;
+  color: black;
+  font-family: ohno-blazeface, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.2em;
 }
 
 input[type="text"] {
