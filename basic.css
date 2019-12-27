@@ -33,8 +33,8 @@ footer {
 }
 
 h1 {
-  border-bottom: 1px solid salmon;
-  font-family: p22-zaner-pro-four, sans-serif;
+  border-bottom: 1px solid black;
+  font-family: p22-zaner-pro-four, fantasy;
   font-size: 3em;
   font-weight: 800;
   text-align: center;
@@ -69,19 +69,48 @@ p {
   text-justify: inter-word;
 }
 
+h2 {
+  border-bottom: 1px solid black;
+  font-family: p22-zaner-pro-four, fantasy;
+  font-size: 4em;
+  line-height: 0.3em;
+  margin-bottom: 5%;
+  padding-top: 0.6em;
+}
 
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 3em;
+    line-height: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+}
 
 .text--double--top {
-  padding-bottom: 2em;
   padding-left: 0.6em;
   padding-right: 0.6em;
 }
 
 .text--double--bottom {
   align-self: end;
-  padding-top: 2em;
   padding-left: 0.6em;
   padding-right: 0.6em;
+}
+
+.text--block {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 35em;
+  width: 75%;
+}
+
+@media screen and (max-width: 600px) {
+  .text--block {
+    padding-right: 1em;
+    padding-left: 1em;
+    width: 100%;
+  }
 }
 
 input[type="text"] {
@@ -138,10 +167,11 @@ input:disabled + label {
 }
 
 .layout-alpha--textbox {
-  box-shadow: 1px 0 0 0 salmon, -1px 0 0 0 salmon;
+  box-shadow: 1px 0 0 0 black, -1px 0 0 0 black;
   display: flex;
   grid-column: 1;
   grid-row: 1/3;
+  padding-top: 2em;
 }
 
 @media screen and (max-width: 600px) {
@@ -162,8 +192,10 @@ input:disabled + label {
   grid-template-columns: 3fr 1fr;
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 1em;
+  padding-bottom: 2em;
   padding-left: 2em;
   padding-right: 2em;
+  padding-top: 2em;
 }
 
 @media screen and (max-width: 600px) {
@@ -175,7 +207,7 @@ input:disabled + label {
 }
 
 .layout-bravo--textbox {
-  box-shadow: 1px 0 0 0 salmon, -1px 0 0 0 salmon;
+  box-shadow: 1px 0 0 0 black, -1px 0 0 0 black;
   display: flex;
   grid-column: 2;
   grid-row: 1;
@@ -191,6 +223,28 @@ input:disabled + label {
 .layout-bravo--image {
   grid-column: 1;
   grid-row: 1 / 3;
+}
+
+
+/* dividers */
+.divider-alpha {
+  padding-bottom: 7em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 7em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .divider-alpha {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 .frame {
