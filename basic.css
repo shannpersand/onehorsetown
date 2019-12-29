@@ -44,10 +44,6 @@ section {
   width: 100%;
 }
 
-.article--full-width {
-  
-}
-
 fieldset {
   border-color: black;
   margin-bottom: 1em;
@@ -257,6 +253,14 @@ input:disabled + label {
   padding-top: 2em;
 }
 
+@media screen and (max-width: 600px) {
+  .layout-delta {
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
 .layout-delta--image {
   grid-column: 1 / 5;
 }
@@ -269,6 +273,38 @@ input:disabled + label {
 .layout-delta--heading {
   grid-column: 1 / 4;
   grid-row: 2;
+}
+
+/* echo */
+.layout-echo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.layout-echo--image {
+  grid-column: 1/5;
+  grid-row: 1;
+  position: relative;
+  width: 100%;
+}
+
+.layout-echo--textbox {
+  padding-right: 10%;
+  position: absolute;
+  right: 0;
+  width: 35%;
+}
+
+@media screen and (max-width: 600px) {
+  .layout-echo--textbox {
+    padding-left: 1em;
+    padding-right: 1em;
+    position: static;
+    width: 75%;
+  }
 }
 
 /* dividers */
@@ -331,13 +367,4 @@ input:disabled + label {
 
 .textbox--double {
   box-shadow: 1px 0 0 0 black, -1px 0 0 0 black;
-}
-
-.frame {
-  background: grey;
-}
-
-.frame--full-width {
-  
-  width: 100%;
 }
