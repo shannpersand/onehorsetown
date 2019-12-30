@@ -307,6 +307,12 @@ input:disabled + label {
   }
 }
 
+.layout-echo--textbox--lower {
+  grid-column: 1 / 5;
+  padding-left: 2em;
+  width: 100%;
+}
+
 /* dividers */
 .divider-alpha {
   padding-bottom: 7em;
@@ -339,6 +345,10 @@ input:disabled + label {
   align-self: end;
   padding-left: 0.6em;
   padding-right: 0.6em;
+}
+
+.text--block--small {
+  width: 25%;
 }
 
 .text--block {
