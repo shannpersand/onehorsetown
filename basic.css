@@ -1,5 +1,5 @@
 body {
-  background: floralwhite;
+  background: white;
   color: black;
   font-family: benton-modern-display, serif;
   font-weight: 400;
@@ -244,6 +244,13 @@ input:disabled + label {
   display: flex;
 }
 
+@media screen and (max-width: 600px) {
+  .layout-charlie--image-b {
+    margin-left: 50%;
+    width: 50%;
+  }
+}
+
 /* delta */
 .layout-delta {
   display: grid;
@@ -377,4 +384,8 @@ input:disabled + label {
 
 .textbox--double {
   box-shadow: 1px 0 0 0 black, -1px 0 0 0 black;
+}
+
+.padding-left {
+  padding-left: 1em;
 }
