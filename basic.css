@@ -60,6 +60,12 @@ h1 {
   padding-top: 10rem;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -172,6 +178,12 @@ legend {
   font-size: 4rem;
 }
 
+@media screen and (max-width: 600px) {
+  legend {
+    font-size: 3rem;
+  }
+}
+
 input[type="text"] {
   font-family: serif;
   font-size: 1rem;
@@ -211,8 +223,21 @@ li {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+  .skills {
+    flex-direction: column;
+  }
+}
+
 .skills > fieldset {
   width: 49%;
+}
+
+/* hella specific */
+@media screen and (max-width: 600px) {
+  .skills > fieldset {
+    width: 100%;
+  }
 }
 
 .employment-section {
