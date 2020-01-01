@@ -40,6 +40,7 @@ h1 {
   padding-top: 10rem;
 }
 
+
 footer {
   margin-left: auto;
   margin-right: auto;
@@ -81,15 +82,6 @@ h2 {
   padding-top: 0.6rem;
 }
 
-@media screen and (max-width: 600px) {
-  h2 {
-    font-size: 3rem;
-    line-height: 0.5rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-}
-
 h3 {
   font-family: p22-zaner-pro-four, fantasy;
   font-size: 4rem;
@@ -100,14 +92,6 @@ h3 {
   padding-right: 0;
 }
 
-@media screen and (max-width: 600px) {
-  h3 {
-    font-size: 3rem;
-    line-height: 0.5rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-}
 
 hr {
   border: 0;
@@ -334,7 +318,7 @@ input:disabled + label {
   padding-top: 7rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 75vw;
+  max-width: 90%;
   text-align: center;
 }
 
