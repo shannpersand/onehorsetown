@@ -29,6 +29,12 @@ header {
   width: 90vw;
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    margin-left: auto;
+  }
+}
+
 h1 {
   border-right: 1px solid black;
   font-family: p22-zaner-pro-four, fantasy;
@@ -39,7 +45,6 @@ h1 {
   padding-right: 1rem;
   padding-top: 10rem;
 }
-
 
 footer {
   margin-left: auto;
@@ -91,7 +96,6 @@ h3 {
   padding-left: 0;
   padding-right: 0;
 }
-
 
 hr {
   border: 0;
@@ -351,7 +355,7 @@ input:disabled + label {
 }
 
 .text--bottom {
-  align-self: end;
+  align-self: flex-end;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
 }
