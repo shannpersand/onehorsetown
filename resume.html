@@ -9,79 +9,94 @@
   <body>
     <header>
       <h1>
-        This is the Resume
+        Are You<br />
+        Experienced<br />
       </h1>
     </header>
     <section>
     <form>
         <fieldset>
-          <legend>Person</legend>
-          <input type="text" value="Shannon Miwa" id="name" name="name">
+          <legend>Shannon Miwa</legend>
+          <input type="text" value="Design Generalist" id="name" name="name">
         </fieldset>
         
-        <fieldset>
-          <legend>Type</legend>
-          <input type="text" value="Designer" id="type" name="type">
-        </fieldset>
-        
-        <fieldset>
-          <legend>Skills</legend>
-          <input type="range" id="programs" name="programs" list="tickmarks" step="10" >
-          <datalist id="tickmarks" >
-              <option value="0"></option>
-              <option value="10"></option>
-              <option value="20"></option>
-              <option value="30"></option>
-              <option value="40"></option>
-              <option value="50"></option>
-              <option value="60"></option>
-              <option value="70"></option>
-              <option value="80"></option>
-              <option value="90"></option>
-              <option value="100"></option>
-            </datalist>
-          <input type="text" id="textInput" value="">
-        </fieldset>
-        
-        <fieldset>
-          <legend>Compuper Skills</legend>
-          
-          <ul>
-            <li>
-              <input name="skills" type="radio">
-              <label>HTML</label>
-            </li>
-            <li>
-              <input name="skills" type="radio">
-              <label>CSS/SCSS</label>
-            </li>
-            <li>
-              <input name="skills" type="radio">
-              <label>Some JavaScript/jQuery</label>
-            </li>
-            <li>
-              <input name="skills" type="radio">
-              <label>Figma</label>
-            </li>
-            <li>
-              <input name="skills" type="radio">
-              <label>Sketch</label>
-            </li>
-            <li>
-              <input name="skills" type="radio">
-              <label>Adobe Stuff</label>
-            </li>
-            <li>
-              <input name="skills" type="radio">
-              <label>The Googles</label>
-            </li>
-            <li>
-              <input name="skills" type="radio" checked>
-              <label class="label--long">
-                  Etc., Etc., well, I think we all know it ain't about the programs. I know enough to get it done and enough to know I can always learn more. I am more than happy and able to pick it up if it's necessary. I mean, I learned VIM at my last job; it's more about knowing what to use, when, and when to use The Googles.</label>
+        <div class="skills">
+          <fieldset>
+            <legend>Design Skills</legend>
+            <ul>
+              <li>
+                <input name="design" type="radio">
+                <label>Typography</label>
               </li>
-            </ul>
-        </fieldset>
+              <li>
+                <input name="design" type="radio">
+                <label>Layout</label>
+              </li>
+              <li>
+                <input name="design" type="radio">
+                <label>Research</label>
+              </li>
+              <li>
+                <input name="design" type="radio">
+                <label>Sketching</label>
+              </li>
+              <li>
+                <input name="design" type="radio">
+                <label>Testing and Iteration</label>
+              </li>
+              <li>
+                <input name="design" type="radio">
+                <label>Refinement</label>
+              </li>
+              <li>
+                <input name="design" type="radio" checked>
+                <label class="label--long">
+                  Come on, you know
+                </label>
+                </li>
+              </ul>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Compooper Skills</legend>
+            
+            <ul>
+              <li>
+                <input name="skills" type="radio">
+                <label>HTML</label>
+              </li>
+              <li>
+                <input name="skills" type="radio">
+                <label>CSS/SCSS</label>
+              </li>
+              <li>
+                <input name="skills" type="radio">
+                <label>Some JavaScript/jQuery</label>
+              </li>
+              <li>
+                <input name="skills" type="radio">
+                <label>Figma</label>
+              </li>
+              <li>
+                <input name="skills" type="radio">
+                <label>Sketch</label>
+              </li>
+              <li>
+                <input name="skills" type="radio">
+                <label>Adobe Stuff</label>
+              </li>
+              <li>
+                <input name="skills" type="radio">
+                <label>The Googles</label>
+              </li>
+              <li>
+                <input name="skills" type="radio" checked>
+                <label class="label--long">
+                    Etc., Etc., well, I think we all know it ain't about the programs. I know enough to get it done and enough to know I can always learn more. I am more than happy and able to pick it up if it's necessary. I mean, I learned VIM at my last job; it's more about knowing what to use, when, and when to use The Googles.</label>
+                </li>
+              </ul>
+          </fieldset>
+        </div>
         
         <fieldset>
           <legend>Things I am into</legend>
@@ -167,34 +182,58 @@
         </fieldset>
         
         <fieldset>
-          <legend>Employment &amp; Education</legend>
-          
-          <label>Employment</label>
-          <select>
-            <option selected>Braintree (3.5 years)</option>
-            <option>Software for Good (1 year)</option>
-            <option>Swayspace (5 years)</option>
-            <option>Self Employed (ongoing)</option>
-          </select>
-          
-          <label>Education</label>
-          <select>
-            <option selected>Type@Cooper West (Type design certificate)</option>
-            <option>School of Life (Ongoing)</option>
-            <option>Parsons School of Design (Communication Design BFA)</option>
-          </select>
+          <legend>Employment</legend>
+            <label>Employment</label>
+
+            <div class="employment-section">
+              <h4>
+                Braintree <em>3.5 years</em>
+              </h4>
+                <h5>Senior Product Designer</h5>
+                <p>At Braintree I did any number of things under the umbrella of Product Design. From PM type work, establishing goals and metrics for a project to day to day fiddling with the anti-aliasing of the brand fonts on our websites. I worked on large projects that spanned years like the redevelopment and redesign of a product offering and heading the <a href="https://link.medium.com/APF5h2iMS2">development of a design system.</a></p>
+            </div>
+
+            <div class="employment-section">
+              <h4>
+                Software for Good <em>1 year</em>
+              </h4>
+                <h5>Front End Designer</h5>
+                <p>At Software for Good I threw myself into learning front end development as a trial by fire type of thing. I learned what an API was and used it. I learned to deal with Wordpress and PHP and doing some really wacky stuff like building a tournament bracket and trying to make it mobile friendly? I learned how to build web stuff for mobile apps while simultaneously and desperately trying to improve the typography and usability of the contractor based designs. It was wild.</p>
+            </div>
+
+            <div class="employment-section">
+              <h4>
+                Swayspace <em>5 years</em>
+              </h4>
+                <h5>Designer</h5>
+                <p>I cut my teeth out of school at Swayspace. I learned everything from print design for letterpress, how to physically excecute said printing, to banking application design. I got to wear all hats of design whether making a logo or establishing branding for a client or learning to make a little widget open and close with jQuery.</p>
+            </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Education</legend>
+          <div class="education">
+            <div class="education-section">
+              <h4>Type@Cooper West 2016</h4>
+              <p>Certificate typeface design program</p>
+            </div>
+            <div div class="education-section">
+              <h4>Parsons School of Design</h4>
+              <p>BFA, Communication Design</p>
+            </div>
+          </div>
         </fieldset>
         
-        <fieldset>
-          <legend>Range of Work</legend>
-          
-          <button>Exhibit A</button>
-          <button>Example 1</button>
-        </fieldset>
       </form>
     </section>
-    <footer>
-      hi footer
+
+    <div class="divider-bravo padding-left">
+      <hr />
+    </div>
+
+    <footer class="padding-left padding-right">
+      <a href="index.html">&larr; The Work</a>
+      <p>Shannon Miwa | 2020</p>
     </footer>
   </body>
 </html>
