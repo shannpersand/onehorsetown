@@ -5,9 +5,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/xjq3cxz.css">
     <link type="text/css" rel="stylesheet" href="reset.css"/>
     <link type="text/css" rel="stylesheet" href="basic.css"/>
+    <link type="text/css" rel="stylesheet" href="print.css"/>
   </head>
   <body>
-    <header>
+    <header class="print-hide">
       <h1 class="padding-left">
         Are You<br />
         Experienced<br />
@@ -15,12 +16,14 @@
     </header>
     <section>
     <form>
-        <fieldset>
+        <fieldset class="print-hide">
           <legend>Shannon Miwa</legend>
-          <input type="text" value="Design Generalist" id="name" name="name">
+          <p>Generic Designer</p>
         </fieldset>
+
+        <h3 class="print-show">Shannon Miwa | <em>Generic Designer</em></h3>
         
-        <div class="skills">
+        <div class="skills print-hide">
           <fieldset>
             <legend>Design Skills</legend>
             <ul>
@@ -98,7 +101,7 @@
           </fieldset>
         </div>
         
-        <fieldset>
+        <fieldset class="print-hide">
           <legend>Things I am into</legend>
           
           <ul class="list--grid">
@@ -214,11 +217,13 @@
           <div class="education">
             <div class="education-section">
               <h4>Type at Cooper West</h4>
-              <p>Certificate typeface design program | <em>2016</em></p>
+              <p>Certificate typeface design program</p>
+              <em>2016</em>
             </div>
             <div div class="education-section">
               <h4>Parsons School of Design</h4>
-              <p>BFA, Communication Design | <em>2008 – 2012</em></p>
+              <p>BFA, Communication Design</p>
+              <em>2008 – 2012</em>
             </div>
           </div>
         </fieldset>
@@ -230,7 +235,7 @@
       <hr />
     </div>
 
-    <footer class="padding-left padding-right">
+    <footer class="padding-left padding-right print-hide">
       <a href="index.html">&larr; The Work</a>
       <p>Shannon Miwa | 2020</p>
     </footer>

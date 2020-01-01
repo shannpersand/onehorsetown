@@ -537,3 +537,7 @@ li {
     padding-top: 3rem;
   }
 }
+
+.print-show {
+  display: none;
+}
