@@ -82,6 +82,7 @@ a:hover {
 }
 
 p {
+  line-height: 1.2;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -108,6 +109,18 @@ h3 {
   padding-top: 0.6rem;
   padding-left: 0;
   padding-right: 0;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 20px;
+  font-style: italic;
+  padding-bottom: 0.5rem;
 }
 
 hr {
@@ -191,6 +204,14 @@ li {
 
 .skills > fieldset {
   width: 49%;
+}
+
+.employment-section {
+  padding-bottom: 2rem;
+}
+
+.employment-section > p {
+  max-width: 35rem;
 }
 
 .education {
