@@ -211,6 +211,69 @@ li {
   padding-bottom: 0.5rem;
 }
 
+.list--grid--full {
+  display: grid;
+  grid-template-columns: repeat(12, 2fr);
+  grid-auto-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 0.5rem;
+  grid-auto-flow: dense;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .list--grid--full {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .list--grid--full {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.list-item--full:nth-child(4n) {
+  grid-column: span 3;
+}
+
+.list-item--full:nth-child(odd){
+  grid-column: span 2;
+  grid-row: span 4
+}
+.list-item--full:nth-child(3n) {
+  grid-row: span 2;
+}
+.list-item--full:nth-child(7n) {
+  grid-column: span 3;
+  grid-row: span 5;
+}
+
+@media screen and (max-width: 600px) {
+  .list-item--full:nth-child(7n) {
+    grid-row: span 2;
+  }
+}
+
+.list-item--full.list-item--wide {
+  grid-column: span 6;
+}
+
+@media screen and (max-width: 600px) {
+  .list-item--full.list-item--wide {
+    grid-column: span 4;
+  }
+}
+
+.list-item--full.list-item--mid {
+  grid-column: span 4;
+}
+
+@media screen and (max-width: 600px) {
+  .list-item--full.list-item--mid {
+    grid-column: span 2;
+  }
+}
+
 .label--long {
   /* this seems like a dumb thing */
   display: block;

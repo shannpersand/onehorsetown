@@ -7,26 +7,72 @@
     <link type="text/css" rel="stylesheet" href="reset.css"/>
     <link type="text/css" rel="stylesheet" href="basic.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        function randomize() {
+          var ul = document.querySelector('ul');
+          for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+          }
+        }
+
+        randomize();
+      });
+    </script>
   </head>
-  <body>
-    <ul>
-      <li><img src="images/erthang/3a.png" /></li>
-      <li><img src="images/erthang/4a.png" /></li>
-      <li><img src="images/erthang/5b.png" /></li>
-      <li><img src="images/erthang/conchiglie.png" /></li>
-      <li><img src="images/erthang/deepdiscofox.gif" /></li>
-      <li><img src="images/erthang/douchebag.png" /></li>
-      <li><img src="images/erthang/dropin-vco.gif" /></li>
-      <li><img src="images/erthang/DSCF3636.jpg" /></li>
-      <li><img src="images/erthang/graphqldocs.png" /></li>
-      <li><img src="images/erthang/IMG_7820.JPG" /></li>
-      <li><img src="images/erthang/justkids.png" /></li>
-      <li><img src="images/erthang/laugh.gif" /></li>
-      <li><img src="images/erthang/french75-sized.gif" /></li>
-      <li><img src="images/erthang/paypal.png" /></li>
-      <li><img src="images/erthang/snake.png" /></li>
-      <li><img src="images/erthang/type.png" /></li>
-      <li><img src="images/erthang/french75-sized.gif" /></li>
+  <body style="background: black">
+    <ul class="list--grid--full">
+      <li class="list-item--full"><img src="images/erthang/3a.png" /></li>
+      <li class="list-item--full list-item--mid"><img src="images/erthang/4a.png" /></li>
+      <li class="list-item--full list-item--mid"><img src="images/erthang/5b.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/conchiglie.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/deepdiscofox.gif" /></li>
+      <li class="list-item--full"><img src="images/erthang/douchebag.png" /></li>
+      <li class="list-item--full list-item--wide"><img src="images/erthang/dropin-vco.gif" /></li>
+      <li class="list-item--full"><img src="images/erthang/DSCF3636.jpg" /></li>
+      <li class="list-item--full list-item--mid"><img src="images/erthang/graphqldocs.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/IMG_7820.JPG" /></li>
+      <li class="list-item--full"><img src="images/erthang/justkids.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/laugh.gif" /></li>
+      <li class="list-item--full"><img src="images/erthang/french75-sized.gif" /></li>
+      <li class="list-item--full list-item--wide"><img src="images/erthang/paypal.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/snake.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/type.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/french75-sized.gif" /></li>
+      <li class="list-item--full list-item--wide"><img src="images/erthang/type2.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/type3.png" /></li>
+      <li class="list-item--full list-item--wide"><img src="images/erthang/type4.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/g.gif" /></li>
+      <li class="list-item--full list-item--wide"><img src="images/erthang/help.gif" /></li>
+      <li class="list-item--full"><img src="images/erthang/noodles.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/norman.png" /></li>
+      <li class="list-item--full list-item--wide"><img src="images/erthang/applepay.gif" /></li>
+      <li class="list-item--full"><img src="images/erthang/blano.png" /></li>
+      <li class="list-item--full"><img src="images/erthang/donut.gif" /></li>
+      <li class="list-item--full list-item--wide">
+        <p class="codepen" data-height="439" data-theme-id="dark" data-default-tab="result" data-user="shannpersand" data-slug-hash="aWLZjE" style="height: 439px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="make this stupid dropdown flexy work">
+          <span>See the Pen <a href="https://codepen.io/shannpersand/pen/aWLZjE">
+          make this stupid dropdown flexy work</a> by shannpersand (<a href="https://codepen.io/shannpersand">@shannpersand</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </li>
+      <li class="list-item--full list-item--wide">
+        <p class="codepen" data-height="387" data-theme-id="dark" data-default-tab="result" data-user="shannpersand" data-slug-hash="vvGywz" style="height: 387px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="why did we make it so complicated">
+          <span>See the Pen <a href="https://codepen.io/shannpersand/pen/vvGywz">
+          why did we make it so complicated</a> by shannpersand (<a href="https://codepen.io/shannpersand">@shannpersand</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </li>
+      <li class="list-item--full list-item--wide">
+        <p class="codepen" data-height="439" data-theme-id="dark" data-default-tab="result" data-user="shannpersand" data-slug-hash="NYYoXe" style="height: 439px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="responsive table... kinda">
+          <span>See the Pen <a href="https://codepen.io/shannpersand/pen/NYYoXe">
+          responsive table... kinda</a> by shannpersand (<a href="https://codepen.io/shannpersand">@shannpersand</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </li>
     </ul>
 
 
