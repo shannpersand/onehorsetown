@@ -271,7 +271,7 @@ li {
   grid-row: span 4
 }
 .list-item--full:nth-child(3n) {
-  grid-row: span 2;
+  grid-row: span 4;
 }
 .list-item--full:nth-child(7n) {
   grid-column: span 3;
@@ -334,6 +334,18 @@ li {
   position: absolute;
   transform: scale(1);
   transition: 100ms ease;
+}
+
+@media screen and (max-width: 600px) {
+  .media-block--label {
+    border-radius: 3px;
+    font-size: 1rem;
+    line-height: 1;
+    padding-top: 0.7rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
 }
 
 .label--long {
