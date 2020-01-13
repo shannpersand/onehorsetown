@@ -76,6 +76,14 @@ h1 {
   color: white;
 }
 
+.dark footer {
+  color: white;
+}
+
+.dark hr {
+  background: white;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
