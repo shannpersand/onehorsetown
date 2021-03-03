@@ -71,6 +71,7 @@ h1 {
   }
 }
 
+
 .dark h1 {
   border-right: 1px solid white;
   color: white;
@@ -82,6 +83,10 @@ h1 {
 
 .dark hr {
   background: white;
+}
+
+.dark a {
+  color: white;
 }
 
 footer {
@@ -695,9 +700,17 @@ li {
   padding-top: 7rem;
 }
 
+.padding-top-small {
+  padding-top: 2rem;
+}
+
 @media screen and (max-width: 600px) {
   .padding-top {
     padding-top: 3rem;
+  }
+
+  .padding-top-small {
+    padding-top: 1rem;
   }
 }
 
