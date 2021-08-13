@@ -58,7 +58,8 @@ body {
     min-width: auto;
     font-size: 0.8rem;
     width: 85%;
-    top: 4.5rem;
+    top: 1.5rem;
+    bottom: 1rem;
     left: 5%;
   }
 }
@@ -88,6 +89,13 @@ body {
   padding-bottom: 2rem;
 }
 
+@media screen and (max-width: 500px) {
+  .heading {
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
 h1 {
   border-bottom: 2px solid tomato;
   border-top: 2px solid tomato;
@@ -107,7 +115,7 @@ h1 {
 }
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
 }
 
