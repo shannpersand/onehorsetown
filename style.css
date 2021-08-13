@@ -173,6 +173,7 @@ h1 {
   flex-grow: 1;
   grid-template-columns: 20% 1fr 15% 10%;
 }
+
 .row.row-write:hover {
   background: #adffe3;
 }
@@ -187,7 +188,7 @@ h1 {
 
 @media screen and (max-width: 500px) {
   .row-write {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -200,6 +201,12 @@ h1 {
 .row-item {
   border-left: 1px solid navy;
   padding: 0.8rem;
+}
+
+@media screen and (max-width: 500px) {
+  .row-item {
+    padding: 0.4rem;
+  }
 }
 
 .row-item:last-child {
