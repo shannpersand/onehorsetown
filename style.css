@@ -257,11 +257,10 @@ footer {
   width: 40%;
   max-height: 0;
   max-width: 34rem;
-  position: absolute;
-  left: 30%;
-  top: 3rem;
+  transform-origin: top left;
   transform: 
-    translateX(100vw);
+    translateX(100vw)
+    translateY(-50vh);
   transition: all 300ms;
 }
 
@@ -275,6 +274,7 @@ footer {
 
 @media screen and (max-width: 600px) {
   .receipt {
+    font-size: 0.8rem;
     max-width: auto;
     width: 80%;
   }
@@ -290,6 +290,12 @@ footer {
 @media screen and (max-width: 950px) {
   .receipt-h2 {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .receipt-h2 {
+    font-size: 1rem;
   }
 }
 
@@ -317,7 +323,7 @@ footer {
 
 @media screen and (max-width: 950px) {
   .receipt-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -354,7 +360,8 @@ footer {
 
 @media screen and (max-width: 600px) {
   .receipt-company {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1;
   }
 }
 
@@ -534,4 +541,11 @@ article {
     translateX(0)
     rotate(-4deg);
   transition: all ease 300ms;
+}
+
+@media screen and (max-width: 500px) {
+  .receipt-swing {
+    transform: 
+      rotate(-2deg);
+  }
 }
