@@ -50,13 +50,15 @@ body {
 @media screen and (max-width: 750px) {
   .guest-check {
     left: 2rem;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 500px) {
   .guest-check {
     min-width: auto;
+    font-size: 0.8rem;
     width: 80%;
-    top: 3rem;
+    top: 4.5rem;
     left: 2rem;
   }
 }
@@ -70,6 +72,7 @@ body {
   padding-left: 0.4rem;
   padding-top: 0.2rem;
 }
+
 .corner span {
   color: white;
   display: inline-block;
