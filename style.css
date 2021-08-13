@@ -62,6 +62,11 @@ body {
     bottom: 1rem;
     left: 5%;
   }
+
+  .swing.guest-check {
+    top: 4.5rem;
+    left: 6%;
+  }
 }
 
 .corner {
