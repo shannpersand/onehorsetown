@@ -621,7 +621,7 @@ ul {
   transform: 
     rotate(-4deg) 
     translateX(5%) 
-    translateY(0);
+    translateY(5rem);
 }
 
 .receipt-swing {
