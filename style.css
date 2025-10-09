@@ -486,6 +486,14 @@ footer {
   width: 80%;
 }
 
+.foxtrot {
+  transform-origin: top right;
+  transform: translateX(100vw);
+  transition: all ease 300ms;
+  max-height: 0;
+  width: 80%;
+}
+
 ul {
   list-style-type: none;
   padding-left: 0;
