@@ -21,6 +21,10 @@ body {
   justify-content: center;
 }
 
+img {
+  display: flex;
+}
+
 .wrapper {
   overflow-x: hidden;
   width: 100vw;
