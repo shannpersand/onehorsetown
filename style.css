@@ -607,9 +607,9 @@ ul {
 
 .three-toss {
   margin-bottom: 5%;
-  max-height: 9000px;
+  max-height: 2000px;
   transform: 
-    rotate(-1deg) 
+    rotate(3deg) 
     translateX(5%) 
     translateY(2rem);
 }
@@ -633,10 +633,10 @@ ul {
 }
 
 .six-toss {
-  max-height: 2000px;
   margin-bottom: 5%;
+  max-height: 9000px;
   transform: 
-    rotate(3deg) 
+    rotate(-1deg) 
     translateX(5%) 
     translateY(2rem);
 }
