@@ -632,6 +632,15 @@ ul {
     translateY(5rem);
 }
 
+.six-toss {
+  max-height: 2000px;
+  margin-bottom: 5%;
+  transform: 
+    rotate(3deg) 
+    translateX(5%) 
+    translateY(2rem);
+}
+
 .receipt-swing {
   max-height: 2000px;
   transform: 
