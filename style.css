@@ -184,7 +184,7 @@ h1 {
   border-bottom: 1px solid navy;
   display: grid;
   flex-grow: 1;
-  grid-template-columns: 20% 1fr 15% 10%;
+  grid-template-columns: 15% 1fr 15% 10%;
 }
 
 .row.row-write:hover {
