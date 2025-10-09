@@ -53,6 +53,11 @@ $("#five").click(function () {
   $(".echo").addClass("five-toss");
 });
 
+$("#six").click(function () {
+  checkOut();
+  $(".foxtrot").addClass("six-toss");
+});
+
 $("#receiptTrigger").click(function () {
   checkOut();
   $(".receipt").addClass("receipt-swing");
@@ -66,6 +71,7 @@ $("#guestCheckReset").click(function () {
   $(".charlie").removeClass("three-toss");
   $(".delta").removeClass("four-toss");
   $(".echo").removeClass("five-toss");
+  $(".foxtrot").removeClass("six-toss");
   $(".receipt").removeClass("receipt-swing");
   window.scrollTo(0, 0);
 });
