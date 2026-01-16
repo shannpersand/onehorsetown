@@ -1,3 +1,8 @@
+:root {
+--display-font: "Ballet", Georgia, fantasy;
+--text-font: "Jost", Verdana, sans-serif;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,7 +19,8 @@ body {
   background-image: repeating-linear-gradient(45deg, transparent, transparent 50px, rgba(255, 0, 0, 0.15) 50px, rgba(255, 0, 0, 0.15) 100px), repeating-linear-gradient(-45deg, transparent, transparent 50px, rgba(255, 0, 0, 0.15) 50px, rgba(255, 0, 0, 0.15) 100px);
   background-attachment: fixed;
   color: midnightblue;
-  font-family: "Jost", Verdana, sans-serif;
+  font-family: var(--text-font);
+  font-weight: 400;
   font-size: 65.2%;
   min-height: 100vh;
   width: 100%;
@@ -519,8 +525,8 @@ footer {
 .article-text {
   background:rgba(253,245,230,0.9);
   color: midnightblue;
-  font-family: "Jost", sans-serif;
-  font-weight: lighter;
+  font-family: var(--text-font);
+  font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5;
   text-shadow: 0 0 3px rgba(0,0,0,0.1);
