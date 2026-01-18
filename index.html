@@ -20,9 +20,9 @@
       gtag('config', 'G-MP1CNKNJDZ');
     </script>
   </head>
-  <body id="body">
+  <body>
   <div class="wrapper">
-
+    <!-- navigation -->
     <div id="guestCheck" class="guest-check print-hide">
       <div id="guestCheckReset" class="corner print-hide">
         <span>menu</span>
@@ -111,6 +111,7 @@
       </div>
     </div>
 
+    <!-- resume -->
     <section id="receipt" class="receipt">
       <header class="receipt-header">
         <h2 class="receipt-h2">*** DESIGN DINER ***</h2>
@@ -215,8 +216,8 @@
       </footer>
     </section>
 
-
-      <section id="product" class="section">
+    <!-- product general -->
+    <section id="product" class="section">
         <div class="alfa">
           <h3 class="article-heading">A Handful of Tasters</h3>
         </div>
@@ -262,13 +263,13 @@
         <article class="alfa shadow"><img src="images/erthang/dashboard.png" /></article>
       </section>
 
-
-    <section id="primi-dropin" class="section">
+    <!-- dropin -->
+    <section class="section">
       <div class="bravo">
         <h3 class="article-heading">Drop-in: Mini Case Study</h3>
       </div>
       <article class="bravo">
-        <article class="project-description article-text">
+        <article class="project-description">
           <h3 class="standfirst">
             At Braintree, I was tasked with leading the ground up redesign of a legacy product called Drop-In UI: a widely used product that gave merchants ready-to-use PCI compliant credit card forms that blended into their own checkouts. I headed this 2 year project at Braintree handling a wide range of design tasks and collaborations in addition to overseeing the product schedule and release.
           </h3>
@@ -311,11 +312,11 @@
           </div>
         </article>
 
-        <p class="article-text">The original Drop-in was an isolated iframe that merchants could include on their website as a snippet of code, with a bit of integration. It was a product meant to have a low bar for entry which would allow merchants to accept payments easily while not having to go through a lengthy compliance process.</p>
+        <p class="article-text">The original Drop-in was an isolated iframe that merchants could include on their website as a snippet of code, with a bit of integration. It was a product meant to have a low bar for entry which would allow merchants to accept payments easily while not having to go through a lengthy compliance process, and included both a web and mobile version.</p>
       </article>
       <article class="bravo"><img src="images/dropin/dropin1.png" /></article>
       <article class="bravo">
-        <p class="article-text">This was great for merchants, but for Drop-in users, the interface for Drop-in was fairly confusing. There were no clear input borders and the design was pretty opinionated, it didn't always mesh with Merchant's websites. Some Merchnts were even sending out annotated screenshots to their customers explaining how to pay.</p>
+        <p class="article-text">This was great for merchants, but for Drop-in users, the interface for Drop-in was fairly confusing. There were no clear input borders and the design was pretty opinionated, it didn't always mesh with Merchant's websites. Some Merchants were even sending out annotated screenshots to their customers explaining how to pay.</p>
       </article>
       <article class="bravo"><img src="images/dropin/dropin2.png" /></article>
       <article class="bravo">
@@ -324,40 +325,55 @@
       </article>
       <article class="bravo"><img src="images/dropin/dropin3.png" /></article>
       <article class="bravo">
-        <p class="article-text">The project started as a fairly basic exercise in light visual and UX refinements. There was lots of experiementing with different placements and trying to solve usability issues like making inputs more obvious and less opinionated in order to blend in with Merchant checkouts.</p>
+        <p class="article-text">Due to timelines and engineer availability, we chose to refresh the mobile version of Drop-in first. The issues with the mobile version were fairly straightforward, we needed mainly to clean a few usability issues up and also accommodate more payment method options.</p>
       </article>
       <article class="bravo"><img src="images/dropin/dropin4.png" /></article>
+      <article class="bravo">
+        <p class="article-text">After lots of testing of different layouts and styling, we settled relatively quickly on something that fit with existing iOS and Android system styles. We then spent time to refresh the credit card form and built a custom keyboard for expiration date input.</p>
+        <p class="article-text">We ran the mobile version through more usability testing and prepared the mobile version for release.</p>
+      </article>
       <article class="bravo"><img src="images/dropin/dropin5.png" /></article>
+      <article class="bravo">
+        <p class="article-text">While the mobile redesign clipped along at a fairly quick pace and was pretty straightforward in terms of design decisions, when it came to tackling the web version, the story was quite different.</p>
+        <p class="article-text">I spent the initial sketch phase working on the issues of usability with the first version, and also on the scaling problem that had by this time become more urgent. ApplePay, VisaCheckout, and  GooglePay had all recently launched and merchants wanted to easily accept whatever methods were available.</p>
+      </article>
       <article class="bravo"><img src="images/dropin/dropin6.png" /></article>
       <article class="bravo">
-        <p class="article-text">Then, the payment methods started coming out. Left and right, everyone was coming out with their own payment method from Visa Checkout to Apple Pay, all of a sudden we had to prepare Drop-in to accomodate myriad options. Scaling!</p>
+        <p class="article-text">We settled on a fancy customized dropdown as the main design direction. This was in order to minimize the space on the Merchant's checkout and be less of an obtrusive element on the page. There were two main directions we tested, one that was a two step process and another that could be a one step process.</p>
+        <p class="article-text">The two step process had the advantage of funneling the user down a path and removing distraction, and the single step process had the advantage of speed.</p>
       </article>
       <article class="bravo"><img src="images/dropin/dropin7.png" /></article>
       <article class="bravo">
-        <p class="article-text">We settled on a fancy customized dropdown as the direction. This was in order to minimize the space on the Merchant's checkout and be less of an obtrusive element on the page. There were two main directions we tested, one that was a two step process and another that could be a one step process.</p>
-        <p class="article-text">The two step process had the advantage of funneling the user down a path and removing distraction, and the single step process had the advantage of speed.</p>
+        <p class="article-text">Between user testing and speaking with the consumer group at PayPal, we found that though usability wise there were no issues with the dropdown, there were other considerations that would affect the design. There was a cognitive cost for a user to open a dropdown, not knowing what is under it and needing to parse out that information.</p>
+        <p class="article-text">So, we stepped back and did a little loop into some earlier sketches that were based more on a radio/accordion selection process. We re-used the idea of funneling the user down a path for clarity from the dropdown approach, but refined it so that Drop-in now behaved more like an isolated widget all to itself.</p>
       </article>
       <article class="bravo"><img src="images/dropin/dropin8.png" /></article>
       <article class="bravo">
-        <p class="article-text">Between user testing and speaking with the consumer group at PayPal, we found that though usability wise there were no issues with the dropdown, there were other considerations that would affect the design. There was a cognitive cost for a user to open a dropdown, not knowing what is under it and needing to parse out that information.</p>
-        <p class="article-text">There were also considerations like Merchants and payment methods wanting their logos to be displayed prominently, and Merchants wanting payment methods to be visible upon page load.</p>
+        <p class="article-text">Then, we tested the shit out of that version. We built a little fake store with all the directions in them and ran users through different flows getting them to complete checkouts in various ways to make sure there were no issues.</p>
       </article>
       <article class="bravo"><img src="images/dropin/dropin9.png" /></article>
-      <article class="bravo">
-        <p class="article-text">So, we stepped back and did a little loop into some earlier sketches that were based more on a radio/accordion selection process. We re-used the idea of funneling the user down a path for clarity from the dropdown approach, but refined it so that Drop-in now behaved more like an isolated widget all to itself.</p>
-      </article>
       <article class="bravo"><img src="images/dropin/dropin9cc.gif" /></article>
       <article class="bravo">
-        <p class="article-text">Then, we tested the shit out of that version. We built a little fake store with all the directions in them and ran users through different flows getting them to complete checkouts in various ways to make sure there were no issues.</p>
+        <p class="article-text">We also did what we could to prep Drop-in for as many possible situations, including a mobile-web version for small screens or spaces, and dialed in assets that would be served by Braintree.</p>
       </article>
       <article class="bravo"><img src="images/dropin/dropin10.png" /></article>
       <article class="bravo">
-        <p class="article-text">Throughout all this, we were busy refining, refining, refining. The aesthetic got closer and closer to something that was both modern but generic enough to sit on a wide range of pages.</p>
+        <p class="article-text">Throughout all this, we were busy refining, refining, refining. The aesthetic got closer and closer to something that was both modern but generic enough to sit on a wide range of pages, and after all the detailing down to making it IE9 compatible were tightened up, we were ready for release.</p>
       </article>
       <article class="bravo"><img src="images/dropin/dropin11.png" /></article>
+      <article class="bravo">
+        <p class="article-text">Finally, we hit release after all the perfecting. There was so much more to this than just pushing the code, we needed to create assets and documentation for the new version, tutorials and work with marketing to adjust the website, not to mention communicate to account managers the need for Merchants to upgrade their versions, no small task.</p>
+        <p class="article-text">We got Merchants processing millions of dollars to upgrade, and most of our top selling Drop-in Merchants updated to the 2.0 version. Since release, even more payment methods have been added, and Drop-in handles that scaling beautifully.</p>
+      </article>
+      <article class="bravo"><img src="images/dropin/dropin12.png" /></article>
+      <article class="bravo"><img src="images/dropin/dropin13.png" /></article>
+      <article class="bravo">
+        <p class="project-description">A lot of time and effort went into this redesign, and the ups and downs all led to an incredibly solid end product. The redesign of a product doing millions of dollars in transactions was not a light undertaking, but the work paid off for digital longevity. It's tough sometimes working with digital products that may be completely erased in a month or two, but I'm delighted to say the other day (in 2025) I went to buy Girl Scout cookies online and came across and had the honor of paying through my old friend, Drop-In UI.</p>
+      </article>
     </section>
 
-    <section id="secondi-cards" class="section">
+    <!-- bpo -->
+    <section class="section">
       <div class="charlie">
         <h3 class="article-heading">BPO Manager: Mini Case Study</h3>
       </div>
@@ -453,7 +469,8 @@
       </article>
     </section>
 
-    <section id="system-side" class="section">
+    <!-- design system -->
+    <section class="section">
       <article class="delta">
         <h3 class="article-heading">Design system sides</h3>
       </article>
@@ -494,7 +511,8 @@
       </article>
     </section>
 
-    <section id="dessert" class="section">
+    <!-- misc section -->
+    <section class="section">
       <div class="echo">
         <h3 class="article-heading">Miscellaneous Sweets</h3>
       </div>
@@ -530,6 +548,7 @@
 
     </section>
 
+    <!-- cards -->
     <section id="secondi-cards" class="section">
       <div class="foxtrot">
         <h3 class="article-heading">Standard American Playing Cards</h3>
@@ -646,7 +665,7 @@
       </article>
     </section>
 
-    </div>
+  </div>
     <!-- partial -->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
       <script  src="./script.js"></script>
