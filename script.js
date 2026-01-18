@@ -5,10 +5,11 @@ var day = d.getDate();
 var output =
     ((''+month).length<2 ? '0' : '') + month + '/' +
     ((''+day).length<2 ? '0' : '') + day
-    // + '/' + d.getFullYear();
+
+var year =  d.getFullYear();
 
 $("#date").text(output);
-
+$("#year").text(year);
 // function writeCount(passForm) {
 //   var read = new XMLHttpsRequest();
 //       read.open('GET', 'count.txt', false);
