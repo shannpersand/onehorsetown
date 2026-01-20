@@ -743,7 +743,7 @@ ul {
 
 .one-toss {
   margin-bottom: 5%;
-  max-height: 2000px;
+  max-height: 2500px;
   transform:
     rotate(10deg)
     translateX(5%)
@@ -752,7 +752,7 @@ ul {
 
 .two-toss {
   margin-bottom: 5%;
-  max-height: 2000px;
+  max-height: 2500px;
   transform:
     rotate(-8deg)
     translateX(9%)
@@ -761,7 +761,7 @@ ul {
 
 .three-toss {
   margin-bottom: 5%;
-  max-height: 2000px;
+  max-height: 2500px;
   transform:
     rotate(3deg)
     translateX(15%)
@@ -769,7 +769,7 @@ ul {
 }
 
 .four-toss {
-  max-height: 2000px;
+  max-height: 2500px;
   margin-bottom: 5%;
   transform:
     rotate(2deg)
@@ -778,7 +778,7 @@ ul {
 }
 
 .five-toss {
-  max-height: 2000px;
+  max-height: 2500px;
   margin-bottom: 5%;
   transform:
     rotate(-4deg)
