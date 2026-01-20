@@ -338,6 +338,16 @@ footer {
   padding-bottom: 2rem;
 }
 
+.receipt-title {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .receipt-title {
+    font-size: 1rem;
+  }
+}
+
 .receipt-body {
   border-bottom: 2px dashed slateblue;
   border-top: 2px dashed slateblue;
@@ -347,9 +357,14 @@ footer {
 
 .receipt-text {
   list-style-type: "-";
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.2;
   margin-top: 0.5rem;
+  grid-column: span 2;
+}
+
+.receipt-text li {
+  padding-block-end: 0.5rem;
 }
 
 @media screen and (max-width: 950px) {
@@ -360,7 +375,7 @@ footer {
 
 .receipt-row-header {
   display: grid;
-  grid-template-columns: 12% 1fr 25%;
+  grid-template-columns: 1fr 15%;
   column-gap: 1%;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -377,22 +392,32 @@ footer {
 
 .receipt-row {
   display: grid;
-  grid-template-columns: 12% 1fr 25%;
+  grid-template-columns: 1fr 25%;
+  grid-template-rows: 3rem 1fr;
   column-gap: 1%;
-  padding-top: 0.6rem;
+  padding-top: 1rem;
   padding-bottom: 0.6rem;
 }
 
 .receipt-company {
-  text-align: right;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: .9rem;
+  text-transform: uppercase
+}
+
+.receipt-date {
+  font-size: .8rem;
+  text-align: right;
 }
 
 @media screen and (max-width: 600px) {
   .receipt-company {
     font-size: 0.7rem;
     line-height: 1;
+  }
+
+  .receipt-date {
+    font-size: 0.7rem;
   }
 }
 
@@ -771,7 +796,7 @@ ul {
 }
 
 .receipt-swing {
-  max-height: 2000px;
+  max-height: 3000px;
   transform:
     translateX(0)
     rotate(-4deg);

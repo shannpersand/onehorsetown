@@ -3,6 +3,7 @@
     font-size: 100%;
     background-color: white;
     background-image: none;
+    padding: 15pt;
   }
 
   .print-hide {
@@ -47,15 +48,18 @@
     width: auto;
   }
 
-  .receipt-h2 {
-    font-size: 16pt;
-    padding-bottom: 0;
-    margin-bottom: 10pt;
+  .receipt-header {
+    padding-bottom: 1rem;
   }
 
-  .receipt-company {
-    font-size: 11pt;
-    line-height: 1;
+  .receipt-header p {
+    font-size: 10pt;
+  }
+
+  .receipt-h2 {
+    font-size: 14pt;
+    padding-bottom: 0;
+    margin-bottom: 8pt;
   }
 
   .receipt {
@@ -68,15 +72,40 @@
     overflow: auto;
     padding-top: 20pt;
     padding-bottom: 20pt;
-    font-size: 11pt;
+    font-size: 10pt;
+    padding-inline: 40pt;
+  }
+
+  .receipt-row {
+    grid-template-rows: 1.6rem 1fr;
+    padding-top: 5pt;
+    padding-bottom: 0;
   }
 
   .receipt p {
     text-align: center;
   }
 
-  .receipt-text {
+  .receipt-company {
+    font-size: 6pt;
+  }
+
+  .receipt-title {
     font-size: 9pt;
+  }
+
+  .receipt-date {
+    font-size: 7pt;
+  }
+
+  .receipt-text li {
+    font-size: 6pt;
+    max-width: 80%;
+    padding-block-end: 5pt;
+  }
+
+  .receipt-footer .receipt-text {
+    font-size: 8pt;
   }
 
 }
