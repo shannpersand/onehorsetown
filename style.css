@@ -312,7 +312,7 @@ footer {
 
 .cover p {
   margin-bottom: 1rem;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 em {
@@ -337,7 +337,6 @@ em {
 
 .receipt-h2 {
   font-size: 1.6rem;
-  margin-bottom: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -403,6 +402,7 @@ em {
 
 .receipt-text li {
   padding-block-end: 0.5rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 950px) {
@@ -415,8 +415,7 @@ em {
   display: grid;
   grid-template-columns: 1fr 15%;
   column-gap: 1%;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  padding-block: 0.4rem;
   border-bottom: 2px dashed slateblue;
 }
 
@@ -428,19 +427,45 @@ em {
   text-align: right;
 }
 
+.receipt-summary {
+  font-size: 1rem;
+  padding-block: 1rem;
+}
+
+.receipt-skills {
+  padding-block: 1rem;
+}
+
+.receipt-skills h2 {
+  font-size: 1.2rem;
+  margin-block-end: 0.6rem;
+}
+
+.receipt-skills span {
+  display: block;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-size: .9rem;
+  margin-block-end: 0.1rem;
+}
+
+.receipt-skills p {
+  margin-block-end: 0.6rem;
+}
+
 .receipt-row {
   display: grid;
   grid-template-columns: 1fr 25%;
-  grid-template-rows: 3rem 1fr;
   column-gap: 1%;
   padding-top: 1rem;
   padding-bottom: 0.6rem;
 }
 
 .receipt-company {
-  line-height: 1.5;
+  line-height: 1.1;
   font-size: .9rem;
-  text-transform: uppercase
+  margin-top: 0.3rem;
+  text-transform: uppercase;
 }
 
 .receipt-date {
@@ -487,6 +512,10 @@ em {
 
 .border-bottom {
   border-bottom: 2px dashed slateblue;
+}
+
+.print-show {
+  display: none;
 }
 
 /*card*/
@@ -837,7 +866,7 @@ ul {
 }
 
 .receipt-swing {
-  max-height: 3000px;
+  max-height: 3500px;
   transform:
     translateX(0)
     rotate(-4deg);
