@@ -28,7 +28,8 @@ $("#year").text(year);
 //window.onload = writeCount;
 
 function checkOut() {
-  $("#guestCheck").addClass("swing");
+  $("#guestCheckWrap").addClass("swing");
+  $("#candyTrigger").addClass("swing-2");
   $("#guestCheckReset span").css("color", "navy");
 }
 
@@ -71,9 +72,12 @@ $("#receiptTrigger").click(function () {
   $(".receipt").addClass("receipt-swing");
 });
 
+// resets everything when the menu button is clicked
 $("#guestCheckReset").click(function () {
-  $("#guestCheck").removeClass("swing");
-  $("#guestCheckReset span").css("color", "white");
+  console.log("click");
+  $("#guestCheckWrap").removeClass("swing");
+  $("#candyTrigger").removeClass("swing-2");
+  $("#guestCheckReset span").css("color", "#fff0");
   $(".alfa").removeClass("one-toss");
   $(".bravo").removeClass("two-toss");
   $(".charlie").removeClass("three-toss");
@@ -81,5 +85,6 @@ $("#guestCheckReset").click(function () {
   $(".echo").removeClass("five-toss");
   $(".foxtrot").removeClass("six-toss");
   $(".receipt").removeClass("receipt-swing");
+
   window.scrollTo(0, 0);
 });

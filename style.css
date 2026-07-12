@@ -63,6 +63,19 @@ img {
   height: 300px;
   left: 45vw;
   bottom: 2vh;
+  transition: all ease 300ms;
+}
+
+@media screen and (max-width: 750px) {
+  .add-on {
+    left: 65vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .add-on {
+    left: 55vw;
+  }
 }
 
 .label-hide {
@@ -155,6 +168,11 @@ img {
   background-origin: border-box;
   background-clip: padding-box, border-box;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #0003;
   top: -31px;
   left: -33px;
 }
@@ -227,8 +245,10 @@ img {
   left: 6rem;
   bottom: 4rem;
   overflow-y: scroll;
+  transform-origin: top left;
   transform: rotate(5deg);
   z-index: 2;
+  transition: all ease 300ms;
 }
 
 .guest-check-container {
@@ -261,35 +281,29 @@ img {
 }
 
 @media screen and (max-width: 750px) {
-  .guest-check {
-    left: 2rem;
+  .nav-wrap {
     font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 500px) {
-  .guest-check {
+  .nav-wrap {
     min-width: auto;
     font-size: 0.8rem;
     width: 85%;
     top: 1.5rem;
-    bottom: 1rem;
-    left: 5%;
+    bottom: 5rem;
+    left: 8%;
   }
 
-  .swing.guest-check {
+  .swing.nav-wrap {
     top: 4.5rem;
-    left: 6%;
+    left: 12%;
   }
 }
 
 .guest-check-back {
   background: white;
   transform: rotateY(180deg);
-}
-
-.flip {
-  transform: rotateY(180deg);
-  transition: transform 0.5s;
 }
 
 .corner {
@@ -300,10 +314,11 @@ img {
   position: absolute;
   padding-left: 0.4rem;
   padding-top: 0.2rem;
+  z-index: 1;
 }
 
 .corner span {
-  color: white;
+  color: #fff0;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 500;
@@ -330,8 +345,8 @@ h1 {
   border-top: 2px solid tomato;
   color: navy;
   line-height: 0.7;
-  font-family: "Ballet", cursive;
-  font-size: 6rem;
+  font-family: var(--display-font);
+  font-size: 5.7rem;
   padding-top: 0.3rem;
   text-align: center;
   text-shadow:
@@ -462,6 +477,12 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .order-wrap {
+    flex-grow: 0;
+  }
 }
 
 footer {
@@ -1022,6 +1043,17 @@ ul {
   overflow: revert;
   transform: rotate(-150deg);
   transition: all ease 300ms;
+}
+
+.swing-2 {
+  transform: translateX(200px) translateY(-1000px) rotate(30deg);
+  transition: all ease 300ms;
+}
+
+.flip {
+  transform-origin: center center;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
 }
 
 .one-toss {
