@@ -1,12 +1,15 @@
 var d = new Date();
-var month = d.getMonth()+1;
+var month = d.getMonth() + 1;
 var day = d.getDate();
 
 var output =
-    ((''+month).length<2 ? '0' : '') + month + '/' +
-    ((''+day).length<2 ? '0' : '') + day
+  (("" + month).length < 2 ? "0" : "") +
+  month +
+  "/" +
+  (("" + day).length < 2 ? "0" : "") +
+  day;
 
-var year =  d.getFullYear();
+var year = d.getFullYear();
 
 $("#date").text(output);
 $("#year").text(year);
@@ -59,6 +62,10 @@ $("#six").click(function () {
   $(".foxtrot").addClass("six-toss");
 });
 
+$("#candyTrigger").click(function () {
+  $(".guest-check-container").toggleClass("flip");
+});
+
 $("#receiptTrigger").click(function () {
   checkOut();
   $(".receipt").addClass("receipt-swing");
@@ -76,4 +83,3 @@ $("#guestCheckReset").click(function () {
   $(".receipt").removeClass("receipt-swing");
   window.scrollTo(0, 0);
 });
-

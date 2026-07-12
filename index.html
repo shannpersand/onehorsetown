@@ -30,98 +30,126 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- candy -->
+      <div id="candyTrigger" class="add-on print-hide">
+        <div class="candy-wrapper">
+          <div class="wrapper-start">
+            <div class="plastic-start"></div>
+          </div>
+
+          <div class="candy-shadow">
+            <div class="candy"></div>
+          </div>
+
+          <div class="wrapper-end">
+            <div class="plastic-end"></div>
+          </div>
+        </div>
+
+        <div class="label-hide">
+          <h2 id="label">&nbsp;AI</h2>
+        </div>
+      </div>
+
       <!-- navigation -->
-      <div id="guestCheck" class="guest-check print-hide">
-        <div id="guestCheckReset" class="corner print-hide">
-          <span>menu</span>
-        </div>
-        <div class="heading">
-          <h1>Guest Check</h1>
-        </div>
-        <div class="data">
-          <div class="data-box">
-            <h3>date</h3>
-            <span id="date" class="data-text">Today</span>
-          </div>
-          <div class="data-box">
-            <h3>table</h3>
-            <span class="data-text">3</span>
-          </div>
-          <div class="data-box">
-            <h3>server</h3>
-            <span class="data-text">shannon</span>
-          </div>
-          <div class="data-box">
-            <h3>number</h3>
-            <span id="counter" class="data-text-number"
-              >2008&ndash;<span id="year"></span
-            ></span>
-          </div>
-        </div>
-        <div class="order-wrap">
-          <ul class="order">
-            <li class="row">
-              <div class="row-item">Qty</div>
-              <div class="row-item item">Item</div>
-              <div class="row-item money">$</div>
-              <div class="row-item money"></div>
-            </li>
-            <li id="one" class="row row-write">
-              <div class="row-item">16</div>
-              <div class="row-item item">Product Design Appetizers</div>
-              <div class="row-item money">160</div>
-              <div class="row-item money">00</div>
-            </li>
-            <li id="three" class="row row-write">
-              <div class="row-item">1</div>
-              <div class="row-item item">First course: BPO Manager</div>
-              <div class="row-item money">100</div>
-              <div class="row-item money">00</div>
-            </li>
-            <li id="two" class="row row-write">
-              <div class="row-item">1</div>
-              <div class="row-item item">Second course: Drop-in</div>
-              <div class="row-item money">100</div>
-              <div class="row-item money">00</div>
-            </li>
-            <li id="four" class="row row-write">
-              <div class="row-item">1</div>
-              <div class="row-item item">Design system side dish</div>
-              <div class="row-item money">50</div>
-              <div class="row-item money">00</div>
-            </li>
-            <li id="six" class="row row-write">
-              <div class="row-item">1</div>
-              <div class="row-item item">
-                Dessert: Standard American Playing Cards
+      <div id="guestCheckWrap" class="nav-wrap">
+        <div class="guest-check-container">
+          <div id="guestCheck" class="guest-check print-hide">
+            <div id="guestCheckReset" class="corner print-hide">
+              <span>menu</span>
+            </div>
+            <div class="heading">
+              <h1>Guest Check</h1>
+            </div>
+            <div class="data">
+              <div class="data-box">
+                <h3>date</h3>
+                <span id="date" class="data-text">Today</span>
               </div>
-              <div class="row-item money">25</div>
-              <div class="row-item money">00</div>
-            </li>
-            <li id="five" class="row row-write">
-              <div class="row-item">15</div>
-              <div class="row-item item">
-                Digestif: Type, Lettering &amp; Logos
+              <div class="data-box">
+                <h3>table</h3>
+                <span class="data-text">3</span>
               </div>
-              <div class="row-item money">Free</div>
-              <div class="row-item money">ee</div>
-            </li>
-            <li class="row row-empty">
-              <div class="row-item">&nbsp;</div>
-              <div class="row-item item"></div>
-              <div class="row-item money"></div>
-              <div class="row-item money"></div>
-            </li>
-            <li id="receiptTrigger" class="row row-write">
-              <div class="row-item">&nbsp;</div>
-              <div class="row-item item">Check receipt</div>
-              <div class="row-item money"></div>
-              <div class="row-item money"></div>
-            </li>
-          </ul>
-          <footer>
-            <h2 class="guest-check-h2">Thank you!</h2>
-          </footer>
+              <div class="data-box">
+                <h3>server</h3>
+                <span class="data-text">shannon</span>
+              </div>
+              <div class="data-box">
+                <h3>number</h3>
+                <span id="counter" class="data-text-number"
+                  >2008&ndash;<span id="year"></span
+                ></span>
+              </div>
+            </div>
+            <div class="order-wrap">
+              <ul class="order">
+                <li class="row">
+                  <div class="row-item">Qty</div>
+                  <div class="row-item item">Item</div>
+                  <div class="row-item money">$</div>
+                  <div class="row-item money"></div>
+                </li>
+                <li id="one" class="row row-write">
+                  <div class="row-item">16</div>
+                  <div class="row-item item">Product Design Appetizers</div>
+                  <div class="row-item money">160</div>
+                  <div class="row-item money">00</div>
+                </li>
+                <li id="three" class="row row-write">
+                  <div class="row-item">1</div>
+                  <div class="row-item item">First course: BPO Manager</div>
+                  <div class="row-item money">100</div>
+                  <div class="row-item money">00</div>
+                </li>
+                <li id="two" class="row row-write">
+                  <div class="row-item">1</div>
+                  <div class="row-item item">Second course: Drop-in</div>
+                  <div class="row-item money">100</div>
+                  <div class="row-item money">00</div>
+                </li>
+                <li id="four" class="row row-write">
+                  <div class="row-item">1</div>
+                  <div class="row-item item">Design system side dish</div>
+                  <div class="row-item money">50</div>
+                  <div class="row-item money">00</div>
+                </li>
+                <li id="six" class="row row-write">
+                  <div class="row-item">1</div>
+                  <div class="row-item item">
+                    Dessert: Standard American Playing Cards
+                  </div>
+                  <div class="row-item money">25</div>
+                  <div class="row-item money">00</div>
+                </li>
+                <li id="five" class="row row-write">
+                  <div class="row-item">15</div>
+                  <div class="row-item item">
+                    Digestif: Type, Lettering &amp; Logos
+                  </div>
+                  <div class="row-item money">Free</div>
+                  <div class="row-item money">ee</div>
+                </li>
+                <li class="row row-empty">
+                  <div class="row-item">&nbsp;</div>
+                  <div class="row-item item"></div>
+                  <div class="row-item money"></div>
+                  <div class="row-item money"></div>
+                </li>
+                <li id="receiptTrigger" class="row row-write">
+                  <div class="row-item">&nbsp;</div>
+                  <div class="row-item item">Check receipt</div>
+                  <div class="row-item money"></div>
+                  <div class="row-item money"></div>
+                </li>
+              </ul>
+              <footer>
+                <h2 class="guest-check-h2">Thank you!</h2>
+              </footer>
+            </div>
+          </div>
+          <div id="backGuestCheck" class="guest-check-back print-hide">
+            hello
+          </div>
         </div>
       </div>
 

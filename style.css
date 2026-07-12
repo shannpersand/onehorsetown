@@ -52,27 +52,214 @@ img {
   width: 100vw;
 }
 
-.guest-check {
+/* add on */
+.add-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  left: 45vw;
+  bottom: 2vh;
+}
+
+.label-hide {
+  height: 0;
+  overflow: hidden;
+}
+
+#label {
+  color: darkblue;
+  font-family: var(--text-font);
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0.5;
+  display: flex;
+  padding: 5px;
+  transform: rotate(20deg);
+}
+
+.wrapper-start::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff5;
+  position: absolute;
+  top: 70px;
+  left: 65px;
+  border-radius: 50%;
+}
+
+.wrapper-start {
+  position: absolute;
+  left: -60px;
+  top: -55px;
+  perspective: 190px;
+}
+
+.plastic-start {
+  height: 80px;
+  width: 80px;
+  background: #fff5;
+  border: 1px solid #fff6;
+  transform: rotateX(35deg) rotateY(20deg);
+}
+
+.plastic-start::before {
+  content: "";
+  background-image: -moz-element(#label);
+  height: 80px;
+  width: 70px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* candy */
+.candy-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  width: 110px;
+  background: #fff5;
+  border: 1px solid #fff6;
+  border-radius: 58% 52% 56% 65% / 40% 50% 35% 50%;
+  position: relative;
+}
+
+.candy-wrapper::before {
+  content: "";
+  background-image: -moz-element(#label);
+  height: 110px;
+  width: 110px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 58% 52% 56% 65% / 40% 50% 35% 50%;
+}
+
+.candy {
   background: white;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 25px solid transparent;
+  background-image:
+    linear-gradient(white, white),
+    repeating-conic-gradient(
+      from 45deg at 50% 50%,
+      red 0deg 20deg,
+      white 20deg 40deg
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  position: absolute;
+  top: -31px;
+  left: -33px;
+}
+
+.candy-shadow {
+  background: darkred;
+  height: 97px;
+  width: 97px;
+  border-radius: 50%;
+  border: 25px solid transparent;
+  background-image:
+    linear-gradient(white, white),
+    repeating-conic-gradient(
+      from 45deg at 45% 44%,
+      darkred 0deg 20deg,
+      grey 20deg 41deg
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  margin-right: -7px;
+  margin-bottom: -7px;
+  box-shadow: -5px 5px 15px #0006;
+  position: relative;
+}
+
+.wrapper-end::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff5;
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+.wrapper-end {
+  position: absolute;
+  right: -55px;
+  top: 95px;
+  perspective: 110px;
+}
+
+.plastic-end {
+  height: 80px;
+  width: 70px;
+  background: #fff5;
+  border: 1px solid #fff6;
+  transform: rotateX(-25deg) rotateY(-32deg);
+}
+
+.plastic-end::before {
+  content: "";
+  background-image: -moz-element(#label);
+  height: 80px;
+  width: 70px;
+  position: absolute;
+  z-index: 2;
+}
+
+.nav-wrap {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
   margin-left: auto;
   margin-right: auto;
   min-width: 30rem;
   width: 40%;
-  padding: 1rem;
   position: fixed;
-  overflow: scroll;
   top: 4rem;
   left: 6rem;
   bottom: 4rem;
-  transform-origin: top left;
-  transition: all ease 300ms;
+  overflow-y: scroll;
   transform: rotate(5deg);
   z-index: 2;
 }
+
+.guest-check-container {
+  background: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+/* guest check */
+.guest-check,
+.guest-check-back {
+  display: flex;
+  min-height: 950px;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  font-size: 1rem;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.guest-check {
+  background: white;
+  border-right: inset 1px solid #0005;
+  border-bottom: inset 1px solid #0005;
+}
+
 @media screen and (max-width: 750px) {
   .guest-check {
     left: 2rem;
@@ -93,6 +280,16 @@ img {
     top: 4.5rem;
     left: 6%;
   }
+}
+
+.guest-check-back {
+  background: white;
+  transform: rotateY(180deg);
+}
+
+.flip {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
 }
 
 .corner {
