@@ -47,7 +47,7 @@
   }
 
   .receipt-header {
-    padding-bottom: 1rem;
+    padding-bottom: 5pt;
     display: flex;
     justify-content: space-between;
   }
@@ -60,7 +60,7 @@
   .receipt-header-info p {
     text-align: right;
     font-size: 8pt;
-    padding-block-start: 6pt;
+    padding-block-start: 0pt;
   }
 
   .cover-header {
@@ -76,9 +76,10 @@
   }
 
   .receipt-h2 {
-    font-size: 14pt;
+    font-size: 13pt;
     padding-bottom: 0;
-    margin-bottom: 8pt;
+    padding-top: 0;
+    margin-bottom: 0pt;
   }
 
   .cover-h2 {
@@ -106,7 +107,7 @@
     padding-top: 20pt;
     padding-bottom: 20pt;
     font-size: 10pt;
-    padding-inline: 40pt;
+    padding-inline: 20pt;
   }
 
   .receipt-summary-wrapper {
@@ -115,7 +116,7 @@
   }
 
   .receipt-summary {
-    font-size: 9pt;
+    font-size: 8pt;
     line-height: 1.1;
     text-align: left;
     border-right: 2px dashed slateblue;
@@ -132,18 +133,19 @@
     display: grid;
     grid-template-columns: 23% 1fr;
     grid-gap: 4pt;
-    padding-inline-start: 5pt;
+    padding-inline-start: 10pt;
+    padding-block: 0.5rem;
   }
 
   .receipt-skills span {
-    font-size: 8pt;
+    font-size: 7pt;
     text-align: right;
   }
 
   .receipt-skills p {
-    font-size: 8pt;
+    font-size: 7pt;
     text-align: left;
-    margin-block-end: 3pt;
+    margin-block-end: 0pt;
   }
 
   .cover {
@@ -160,10 +162,10 @@
     grid-template-rows: 1.6rem 1fr;
     padding-top: 8pt;
     padding-bottom: 0;
-}
+  }
 
   .receipt-row-header {
-    padding-block: 10pt;
+    padding-block: 5pt;
   }
 
   .receipt-company {
@@ -193,11 +195,9 @@
   }
 
   .receipt-footer p,
-  .cover-footer p
-   {
+  .cover-footer p {
     font-size: 8pt;
     text-align: center;
     margin-bottom: 0.5rem;
   }
-
 }
