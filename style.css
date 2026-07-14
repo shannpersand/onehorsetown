@@ -47,6 +47,17 @@ img {
   display: flex;
 }
 
+picture {
+  display: block;
+}
+
+picture img {
+  width: 100%;
+  height: auto; /* lets the browser use the width/height attrs to hold aspect ratio */
+  max-width: 100%;
+  display: block;
+}
+
 .wrapper {
   overflow-x: hidden;
   width: 100vw;
@@ -54,6 +65,7 @@ img {
 
 /* add on */
 .add-on {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,8 +265,10 @@ img {
 
 .guest-check-container {
   background: white;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  padding-right: 2px;
+  padding-bottom: 2px;
   position: absolute;
   transform-style: preserve-3d;
   transition: transform 1s;
@@ -263,6 +277,7 @@ img {
 /* guest check */
 .guest-check,
 .guest-check-back {
+  box-shadow: 1px 1px 1px #0004;
   display: flex;
   min-height: 950px;
   height: 100%;
@@ -1054,6 +1069,10 @@ ul {
   transform-origin: center center;
   transform: rotateY(180deg);
   transition: transform 0.5s;
+}
+
+.spin {
+  transform: rotate(10deg);
 }
 
 .one-toss {

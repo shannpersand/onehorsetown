@@ -65,6 +65,7 @@ $("#six").click(function () {
 
 $("#candyTrigger").click(function () {
   $(".guest-check-container").toggleClass("flip");
+  $(".add-on").toggleClass("spin");
 });
 
 $("#receiptTrigger").click(function () {
@@ -74,7 +75,6 @@ $("#receiptTrigger").click(function () {
 
 // resets everything when the menu button is clicked
 $("#guestCheckReset").click(function () {
-  console.log("click");
   $("#guestCheckWrap").removeClass("swing");
   $("#candyTrigger").removeClass("swing-2");
   $("#guestCheckReset span").css("color", "#fff0");
