@@ -468,9 +468,13 @@
         </div>
         <div class="alfa">
           <p class="article-text">
-            A sketchbook space for experiments, not full case studies. Lately
-            that's meant playing with AI tools across product thinking and
-            craft. Not everything here is polished, and that's the point.
+            A space for experiments, not full case studies, ongoing and
+            unfinished by design. Right now that means three parallel threads:
+            building a card game app with Claude Code, stress-testing a real
+            design system as an AI skill, and chasing a specific art direction
+            across different AI design tools. Different questions, same
+            underlying curiosity: where AI genuinely helps design and
+            development work, and where it still falls short.
           </p>
         </div>
         <article class="alfa">
@@ -478,12 +482,12 @@
             <h2 class="project-title">Cards with Friends</h2>
             <h3 class="standfirst">
               An app for playing card games remotely, built with React and
-              Supabase using Claude Code. The real goal was flexibility: getting
+              Supabase using Claude Code. The real goal is flexibility: getting
               as close as possible to what a physical deck of cards can do,
               where you can play any game and bend the rules on the fly. Long
               term, the idea is to configure entirely new games through
               prompting, not hard-coded rule sets. (Deck illustrations are their
-              own case study, see the Standard American Playing Cards project.)
+              own case study, see here.)
             </h3>
             <div class="project-image">
               <img src="images/erthang/blano.png" />
@@ -497,20 +501,20 @@
                   <li>Supabase</li>
                 </ul>
               </div>
-              <p>
-                Building this was as much about practicing a working
-                relationship with an AI coding tool as it was about the app
-                itself. I wanted to stay in the driver's seat rather than
-                defaulting to "yes, install this for me" on every prompt. If it
-                was a command I already knew, I typed it myself instead of
-                auto-accepting. When it came to things like environment secrets,
-                I asked it to walk me through how they actually worked and what
-                could go wrong if I got them wrong, rather than treating them as
-                a black box to trust. Along the way I picked up real working
-                knowledge I didn't have before: how YAML files and deployment
-                jobs fit together, and a much better grasp of working with
-                databases. Small habits and investigations, but the kind that
-                keep you actually learning instead of just shipping.
+              <p class="project-text">
+                Building this is as much about practicing a working relationship
+                with an AI coding tool as it is about the app itself. I want to
+                stay in the driver's seat rather than defaulting to "yes,
+                install this for me" on every prompt. If it's a command I
+                already know, I type it myself instead of auto-accepting. When
+                it comes to things like environment secrets, I ask it to walk me
+                through how they actually work and what could go wrong if I get
+                them wrong, rather than treating them as a black box to trust.
+                Along the way I'm picking up real working knowledge I didn't
+                have before: how YAML files and deployment jobs fit together,
+                and a much better grasp of working with databases. Small habits,
+                but the kind that keep me actually learning instead of just
+                shipping.
               </p>
             </div>
           </article>
@@ -524,10 +528,10 @@
               real production files and the actual design system to test
               something I don't always get to fully explore: building a design
               system into a working "skill" for AI tools, and seeing how far
-              that could go with real product complexity. Less about the
-              original design decisions (covered in the case study here), more
-              about probing the edges of what AI can and can't do inside actual
-              design work.
+              that can go with real product complexity. Less about the original
+              design decisions (covered in the case study here), more about
+              probing the edges of what AI can and can't do inside actual design
+              work.
             </h3>
             <div class="project-image">
               <img src="images/erthang/blano.png" />
@@ -537,23 +541,22 @@
                 <h4>Tooling</h4>
                 <ul>
                   <li>Claude Code</li>
-                  <li>Github</li>
-                  <li>Supabase</li>
+                  <li>Figma</li>
                 </ul>
               </div>
-              <p>
-                This project was less about changing how I work and more about
+              <p class="project-text">
+                This project is less about changing how I work and more about
                 mapping where AI tools are actually useful in design work versus
-                where they still fall short. Lightweight, mechanical tasks
-                worked well: randomizing values, matching up math, small
-                time-saving cleanup. Anything requiring nuance was harder.
-                Asking for a single line to be added or removed often took
-                several attempts to land right, and getting good results
-                depended on how thoroughly the design system states were already
-                fleshed out. The more specific and well-defined the system, the
-                better the output. A big part of this was learning how to
-                actually describe design changes in a way the tool could act on
-                accurately, which turned out to be its own skill worth building.
+                where they still fall short. Lightweight, mechanical tasks work
+                well: randomizing values, matching up math, small time-saving
+                cleanup. Anything requiring nuance is harder. Asking for a
+                single line to be added or removed often takes several attempts
+                to land right, and getting good results depends on how
+                thoroughly the design system states are already fleshed out. The
+                more specific and well-defined the system, the better the
+                output. A big part of this is learning how to actually describe
+                design changes in a way the tool can act on accurately, which is
+                turning out to be its own skill worth building.
               </p>
             </div>
           </article>
@@ -568,9 +571,9 @@
               reference: Japanese commercial art from the 1920s and 30s.
               Minimal, deco, patterned, duotone, asymmetrical but balanced,
               mixing organic and geometric shapes with a playful color sense.
-              The question wasn't whether these tools could build a portfolio
-              site, it was whether any of them could actually interpret a
-              specific, unusual aesthetic rather than defaulting to their own.
+              The question isn't whether these tools can build a portfolio site,
+              it's whether any of them can actually interpret a specific,
+              unusual aesthetic rather than defaulting to their own.
             </h3>
             <div class="project-image">
               <img src="images/erthang/blano.png" />
@@ -585,31 +588,48 @@
                   <li>Loveable</li>
                 </ul>
               </div>
-              <p>
-                Claude Design and Figma Make struggled out of the box, and
-                several rounds of prompting later, the results were still far
-                from the reference. Neither seemed to genuinely interpret the
-                source material so much as apply a generic layer on top of a
-                standard layout. Claude Code took a different approach, building
-                out a moodboard before executing, which helped early on, but it
-                still struggled with simple pattern requests once it got to
-                actual execution. Lovable came closest on pure design
-                sensibility, offering pre-built directions that were noticeably
-                more informed by the reference, including theming and
-                placeholder copy that picked up on the source material in ways I
-                didn't expect. But it struggled more with actually building out
-                the execution. None of the four produced anything finished or
-                shippable, and none broke meaningfully away from a fairly
-                standard portfolio layout, though Lovable got closest. The real
-                finding wasn't which tool "won," it was where each one's
-                interpretation broke down: some tools are better at
-                surface-level styling, some are better at structural building,
-                and almost none are good at both when the aesthetic target is
-                specific and unfamiliar to them.
-              </p>
+              <div>
+                <p class="project-text">
+                  Claude Design and Figma Make struggle out of the box, and
+                  several rounds of prompting later, the results are still far
+                  from the reference. Neither seems to genuinely interpret the
+                  source material so much as apply a generic layer on top of a
+                  standard layout. Claude Code takes a different approach,
+                  building out a moodboard before executing, which helps early
+                  on, but it still struggles with simple pattern requests once
+                  it gets to actual execution. Lovable comes closest on pure
+                  design sensibility, offering pre-built directions that are
+                  noticeably more informed by the reference, including theming
+                  and placeholder copy that pick up on the source material in
+                  ways I didn't expect. But it struggles more with actually
+                  building out the execution.
+                </p>
+                <p class="project-text">
+                  None of the four have produced anything finished or shippable
+                  yet, and none break meaningfully away from a fairly standard
+                  portfolio layout, though Lovable gets closest. The real
+                  finding isn't which tool "wins," it's where each one's
+                  interpretation breaks down: some tools are better at
+                  surface-level styling, some are better at structural building,
+                  and almost none are good at both when the aesthetic target is
+                  specific and unfamiliar to them.
+                </p>
+              </div>
             </div>
           </article>
         </article>
+
+        <div class="alfa">
+          <p class="project-description">
+            AI makes it easy to produce more work, faster. It's much harder to
+            make that work meaningfully better. The difference comes down to
+            editing: knowing what's actually worth keeping. But you can't edit
+            well without reading and writing well first, reading closely enough
+            to know what a tool actually did, writing precisely enough to give
+            it real intent to work from. Anyone can generate more. Fewer know
+            what to do with it.
+          </p>
+        </div>
       </section>
 
       <!-- dropin -->
@@ -669,7 +689,7 @@
                     Allowed mobile apps to take advantage of easy, secure
                     payment acceptance
                   </li>
-                  <li>Still. In. Use. (6 years later!)</li>
+                  <li>Still. In. Use. (9 years later!)</li>
                 </ul>
               </div>
             </div>
