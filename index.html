@@ -179,10 +179,14 @@
                 but on a human one. There are no clean datasets, no
                 hallucination-free models, and all of them use vast amounts of
                 energy, offsetting huge environmental costs to those with no say
-                in the matter. Defaulting to "AI first" without consideration is
-                not a neutral act. Good design is not a generated outcome—it
-                requires curiosity, judgment, and genuine care, and I strive to
-                bring that to everything I do as a designer.
+                in the matter.
+                <strong>
+                  "AI first", default without consideration, is not a neutral
+                  act.
+                </strong>
+                Good design is not a generated outcome—it requires curiosity,
+                judgment, and genuine care, and I strive to bring that to
+                everything I do as a designer.
               </p>
             </div>
           </div>
@@ -471,14 +475,139 @@
         </div>
         <article class="alfa">
           <article class="project-description">
+            <h2 class="project-title">Cards with Friends</h2>
             <h3 class="standfirst">
-              At Braintree, I was tasked with leading the ground up redesign of
-              a legacy product called Drop-In UI: a widely used product that
-              gave merchants ready-to-use PCI compliant credit card forms that
-              blended into their own checkouts. I headed this 2 year project at
-              Braintree handling a wide range of design tasks and collaborations
-              in addition to overseeing the product schedule and release.
+              An app for playing card games remotely, built with React and
+              Supabase using Claude Code. The real goal was flexibility: getting
+              as close as possible to what a physical deck of cards can do,
+              where you can play any game and bend the rules on the fly. Long
+              term, the idea is to configure entirely new games through
+              prompting, not hard-coded rule sets. (Deck illustrations are their
+              own case study, see the Standard American Playing Cards project.)
             </h3>
+            <div class="project-image">
+              <img src="images/erthang/blano.png" />
+            </div>
+            <div class="project-list-wrapper-alt">
+              <div class="project-list">
+                <h4>Tooling</h4>
+                <ul>
+                  <li>Claude Code</li>
+                  <li>Github</li>
+                  <li>Supabase</li>
+                </ul>
+              </div>
+              <p>
+                Building this was as much about practicing a working
+                relationship with an AI coding tool as it was about the app
+                itself. I wanted to stay in the driver's seat rather than
+                defaulting to "yes, install this for me" on every prompt. If it
+                was a command I already knew, I typed it myself instead of
+                auto-accepting. When it came to things like environment secrets,
+                I asked it to walk me through how they actually worked and what
+                could go wrong if I got them wrong, rather than treating them as
+                a black box to trust. Along the way I picked up real working
+                knowledge I didn't have before: how YAML files and deployment
+                jobs fit together, and a much better grasp of working with
+                databases. Small habits and investigations, but the kind that
+                keep you actually learning instead of just shipping.
+              </p>
+            </div>
+          </article>
+        </article>
+
+        <article class="alfa">
+          <article class="project-description">
+            <h2 class="project-title">BPO Manager Clickable Prototype</h2>
+            <h3 class="standfirst">
+              A prototype built after wrapping up my work at Assembled, using
+              real production files and the actual design system to test
+              something I don't always get to fully explore: building a design
+              system into a working "skill" for AI tools, and seeing how far
+              that could go with real product complexity. Less about the
+              original design decisions (covered in the case study here), more
+              about probing the edges of what AI can and can't do inside actual
+              design work.
+            </h3>
+            <div class="project-image">
+              <img src="images/erthang/blano.png" />
+            </div>
+            <div class="project-list-wrapper-alt">
+              <div class="project-list">
+                <h4>Tooling</h4>
+                <ul>
+                  <li>Claude Code</li>
+                  <li>Github</li>
+                  <li>Supabase</li>
+                </ul>
+              </div>
+              <p>
+                This project was less about changing how I work and more about
+                mapping where AI tools are actually useful in design work versus
+                where they still fall short. Lightweight, mechanical tasks
+                worked well: randomizing values, matching up math, small
+                time-saving cleanup. Anything requiring nuance was harder.
+                Asking for a single line to be added or removed often took
+                several attempts to land right, and getting good results
+                depended on how thoroughly the design system states were already
+                fleshed out. The more specific and well-defined the system, the
+                better the output. A big part of this was learning how to
+                actually describe design changes in a way the tool could act on
+                accurately, which turned out to be its own skill worth building.
+              </p>
+            </div>
+          </article>
+        </article>
+
+        <article class="alfa">
+          <article class="project-description">
+            <h2 class="project-title">Portfolio Art Direction</h2>
+            <h3 class="standfirst">
+              A separate design exploration for this same portfolio content,
+              testing four different AI design tools against one specific
+              reference: Japanese commercial art from the 1920s and 30s.
+              Minimal, deco, patterned, duotone, asymmetrical but balanced,
+              mixing organic and geometric shapes with a playful color sense.
+              The question wasn't whether these tools could build a portfolio
+              site, it was whether any of them could actually interpret a
+              specific, unusual aesthetic rather than defaulting to their own.
+            </h3>
+            <div class="project-image">
+              <img src="images/erthang/blano.png" />
+            </div>
+            <div class="project-list-wrapper-alt">
+              <div class="project-list">
+                <h4>Tooling</h4>
+                <ul>
+                  <li>Claude Code</li>
+                  <li>Claude Design</li>
+                  <li>Figma Make</li>
+                  <li>Loveable</li>
+                </ul>
+              </div>
+              <p>
+                Claude Design and Figma Make struggled out of the box, and
+                several rounds of prompting later, the results were still far
+                from the reference. Neither seemed to genuinely interpret the
+                source material so much as apply a generic layer on top of a
+                standard layout. Claude Code took a different approach, building
+                out a moodboard before executing, which helped early on, but it
+                still struggled with simple pattern requests once it got to
+                actual execution. Lovable came closest on pure design
+                sensibility, offering pre-built directions that were noticeably
+                more informed by the reference, including theming and
+                placeholder copy that picked up on the source material in ways I
+                didn't expect. But it struggled more with actually building out
+                the execution. None of the four produced anything finished or
+                shippable, and none broke meaningfully away from a fairly
+                standard portfolio layout, though Lovable got closest. The real
+                finding wasn't which tool "won," it was where each one's
+                interpretation broke down: some tools are better at
+                surface-level styling, some are better at structural building,
+                and almost none are good at both when the aesthetic target is
+                specific and unfamiliar to them.
+              </p>
+            </div>
           </article>
         </article>
       </section>
