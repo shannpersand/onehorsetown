@@ -929,7 +929,8 @@ strong {
 
 .project-list h4 {
   font-size: 0.9rem;
-  padding-block-end: 0.5rem;
+  font-weight: 500;
+  padding-block-end: 0.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
@@ -946,15 +947,36 @@ strong {
 .product-impact li:before {
   content: "→";
   position: absolute;
-  left: -1.5rem;
+  left: -1.3rem;
   margin-top: 1px;
   font-size: 0.8rem;
 }
 
+.project-list ul {
+  padding-bottom: 1rem;
+}
+
 .project-list li {
   font-size: 1rem;
+  font-weight: 300;
   line-height: 1.3;
   padding-block-end: 0.3rem;
+}
+
+.status-list li {
+  display: flex;
+}
+
+.status-list li.todo:before {
+  content: "☐";
+  padding-right: 0.3rem;
+}
+
+.status-list li.done:before {
+  content: "✓";
+  font-size: 0.7;
+  display: inline-block;
+  padding-right: 0.4rem;
 }
 
 .project-result {
@@ -1188,7 +1210,7 @@ ul {
 .two-toss {
   margin-bottom: 5%;
   max-height: 2500px;
-  transform: rotate(-8deg) translateX(9%) translateY(2rem);
+  transform: rotate(-4deg) translateX(9%) translateY(2rem);
 }
 
 .three-toss {
@@ -1206,7 +1228,7 @@ ul {
 .five-toss {
   max-height: 2500px;
   margin-bottom: 5%;
-  transform: rotate(-4deg) translateX(5%) translateY(5rem);
+  transform: rotate(-2deg) translateX(5%) translateY(5rem);
 }
 
 .six-toss {
